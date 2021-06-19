@@ -51,3 +51,10 @@ OR INSTALLING
 Install with Homebrew on macOS
 
 brew install kubectl 
+
+================
+
+Goto Docker -> pref -> Enable K8s to set up cluster
+
+![image](https://user-images.githubusercontent.com/61533898/122637124-9f742800-d10a-11eb-8565-c7c1bae8ff28.png)
+
