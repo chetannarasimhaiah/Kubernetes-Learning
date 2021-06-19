@@ -1,24 +1,33 @@
+
 Command to install k8s
 
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/amd64/kubectl"
 =============
+
 Validate the binary (optional)
 
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/amd64/kubectl.sha256"
 ===============
+
+
 Validate the kubectl binary against the checksum file:
 
 echo "$(<kubectl.sha256)  kubectl" | shasum -a 256 --check
 ================
+
+
 If valid, the output is:
 
 kubectl: OK
 ==================
 
+
 Make the kubectl binary executable.
 
 chmod +x ./kubectl
 =================
+
+
 Move the kubectl binary to a file location on your system PATH.
 
 sudo mv ./kubectl /usr/local/bin/kubectl
